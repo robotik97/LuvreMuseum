@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    height: 150px;
+    background-color: #030303;
+    display: flex;
+    align-items: center;
+}
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    outline: 1px solid violet;
+}
+.section-title-forum{
+font-family: 'Forum', cursive;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.section{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: 0;  
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+/* header start */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;      
+}
+.logo {
+    display: flex;
+    width: 199px;
+    height: 33px;
+    color:white;
+    display:flex; 
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 775px;
+    height: 26px;
+    text-decoration: none;
+}
+nav a {
+font-family: 'Roboto', sans-serif;
+font-weight: 200;
+font-size: 22px;
+line-height: 26px;
+color:white;
+text-decoration: none;
+letter-spacing: 2px;
+}
+.welcome-dark {
+    height: 810px;
+    background-color: black;
+    
+}
+.welcome-white {
+    height: 810px;
+    background-color: white;
+    
+}
+.container-welcome{
+       height: 100%;
+       position: relative;
+ }
+.picture{
+    /* position: absolute; */
+    background-image: url('/assets/img/mona.svg');
+    background-color: black;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: calc(100%) 0;
+ } 
+ .welcomeLuvre{
+     width: 598px;
+     height: 388px; 
+     padding: 150px 842px 272px 0px;    
+ }
+ .text {
+    font-size: 80px;
+    line-height: 90px;
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;    
+ }
+ .text2{
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    padding: 25px 0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+ }
+.discover{
+    background-color: #710707;
+    width: 360px;
+    height: 75px;
+    border-radius: 15px;
+    border: none;
+    font-size: 22px;
+    color: white;
+}
+.block{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+.block-slider{
+    width: 600px;
+    height: 120px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number-of-slide{
+    display: flex;
+    margin-left:10px;
+}
+.num-slide{
+    font-size: 20px;
+    line-height: 40px;
+    padding-left:10px;
+}
+.cubes{
+    display: flex;
+    margin-right: 35px;
+    margin-left: 55px;
+
+}
+.cube{
+    width: 16px;
+    height: 16px;
+    background-color: #D2B183;
+    margin-right: 25px;
+}
+.cube-2{
+    background-color: white;
+}
+.cursors{
+    width: 100px;
+    
+}
+.cursor-left{
+    margin:0;
+    margin-right: 20px;
+}
+.cursor-right {
+    transform: rotate(180deg);
+}
+
+/*  start section Virtual Tour */
+.virtualTour{
+    height: 1116px;
+}
+.table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.frame{
+    height: 90px;
+    width: 544px;
+}
+.text3{
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+}
+.line{
+    margin: 25px 0px;
+    width: 1440px;
+    height: 3px;
+    left: 0px;
+    top:115px;
+    background: #710707;
+}
+.tour-card{
+    width: 440px;
+    height: 424px;
+}
+.text-card{
+    width: 252px;
+    height: 35px;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px 0px;
+}
+.line2{
+    width: 300px;
+    height: 2px;
+    background: #710707;
+}
+.around{
+    width: 165px;
+    height: 26px;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    color: black;
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+}
+.google{
+    width: 240px;
+    height: 21px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+}
+.collonade{
+    width: 423px;
+}
+/* start section Picture explore */
+.explore{
+    height:865px;
+}
+.pictureExplore{
+    height: 715px;
+    width: 100%;
+    display: flex;
+    outline: violet solid;
+}
+.frame2{
+    width: 660px;
+    height: 90px;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.line-text{
+    width: 660px;
+    height: 3px;
+    left: 0px;
+    top: 115px;
+    background: #710707;
+    border-radius: 0px;
+    margin: 25px 0px;
+}
+.aboutPicture{
+    width: 660px;
+    height: 77px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: white;
+    margin: 50px 0px;
+}
+.gold{
+    color: #CAAA7D;
+}
+.border{
+    margin: 25px 0px;
+}
+.LasMeninasPicture{
+    height: 700px;
+    width: 720px;
+    background-image: url('/assets/img/LasMeninas.svg');
+    background-color: black;
+    background-repeat: no-repeat;
+    /* background-position: calc(100%) 0; */
+} 
