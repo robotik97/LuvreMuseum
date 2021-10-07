@@ -27,6 +27,9 @@ font-family: 'Forum', cursive;
     padding-bottom: 75px;
     margin: 0;  
 }
+.gold{
+    color: #9D8665;
+}
 .dark{
     background-color: black;
     color: white;
@@ -214,7 +217,7 @@ letter-spacing: 2px;
     height: 2px;
     background: #710707;
 }
-.around{
+.virtual-tour{
     width: 165px;
     height: 26px;
     font-weight: 200;
@@ -245,8 +248,10 @@ letter-spacing: 2px;
     width: 100%;
     display: flex;
     outline: violet solid;
+    justify-content: space-between;
 }
 .frame2{
+    position: relative;
     width: 660px;
     height: 90px;
     font-size: 80px;
@@ -254,35 +259,70 @@ letter-spacing: 2px;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
-.line-text{
-    width: 660px;
-    height: 3px;
-    left: 0px;
-    top: 115px;
+.frame2::after{
+    content: "";
+    position: absolute;
     background: #710707;
-    border-radius: 0px;
-    margin: 25px 0px;
+    width: 100%;
+    height: 3px;
+    top: 115px;
+    left: 0px;
 }
 .aboutPicture{
     width: 660px;
-    height: 77px;
-    font-weight: 300;
     font-size: 22px;
     line-height: 38px;
-    color: white;
     margin: 50px 0px;
 }
-.gold{
-    color: #CAAA7D;
-}
+
 .border{
     margin: 25px 0px;
 }
-.LasMeninasPicture{
-    height: 700px;
+.marker{
+    color: #CAAA7D;
+}
+/* start section video journey */
+.video{
+height: 900px;
+width: 1440px;
+}
+.video-journey{
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content{
+    height:90px ;
     width: 720px;
-    background-image: url('/assets/img/LasMeninas.svg');
-    background-color: black;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+/* video player large */
+.videoLouvreMain{
+    position: relative;
+    height:650px ;
+    width: 1440px;
+    padding: 75px 0px 0px 0px;
+}
+.buttonPlay{
+    background: url(/assets/svg/buttonPlayMain.svg);
     background-repeat: no-repeat;
-    /* background-position: calc(100%) 0; */
-} 
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+}

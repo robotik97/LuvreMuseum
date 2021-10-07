@@ -35,7 +35,7 @@
     </div>
 </header>
 <main class="main">
-    <section class="welcome-dark">
+    <section class="welcome-dark" id="welcome">
         <div class="container container-welcome ">
             <div class="picture">
                 <div class = "welcomeLuvre">
@@ -68,7 +68,7 @@
         </div>        
     </section>
     <section>
-        <div class="container">
+        <div class="container" id="visiting">
             <div class="virtualTour section-title-forum section">
                 <div class="frame"> 
                     <p class="text3">Virtual Tour</p>
@@ -80,7 +80,7 @@
                         <p class="section-title-forum text-card">Royal Palace</p>
                         <div class="line2"></div>
                         <a href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815"
-                        class="around roboto">360° Virtual Tour</a>
+                        class="virtual-tour roboto">360° Virtual Tour</a>
                         <div class="google roboto">Google Street Panorama View</div>
                     </div>
                     <div class="tour-card">
@@ -88,7 +88,7 @@
                         <p class="section-title-forum text-card">Denon Wing</p>
                         <div class="line2"></div>
                         <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500"
-                        class="around roboto">360° Virtual Tour</a>
+                        class="virtual-tour roboto">360° Virtual Tour</a>
                         <div class="google roboto">Google Street Panorama View</div>
                     </div>
                     <div class="tour-card">
@@ -96,7 +96,7 @@
                         <p class="section-title-forum text-card collonade">Collonnade Perrault</p>
                         <div class="line2"></div>
                         <a href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120"
-                        class="around roboto">360° Virtual Tour</a>
+                        class="virtual-tour roboto">360° Virtual Tour</a>
                         <div class="google roboto">Google Street Panorama View</div>
                     </div>
                     <div class="tour-card">
@@ -104,7 +104,7 @@
                         <p class="section-title-forum text-card">Greek Hall</p>
                         <div class="line2"></div>
                         <a href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736"
-                        class="around roboto">360° Virtual Tour</a>
+                        class="virtual-tour roboto">360° Virtual Tour</a>
                         <div class="google roboto">Google Street Panorama View</div>
                     </div>
                     <div class="tour-card">
@@ -112,7 +112,7 @@
                         <p class="section-title-forum text-card">Mona Lisa</p>
                         <div class="line2"></div>
                         <a href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120"
-                        class="around roboto">360° Virtual Tour</a>
+                        class="virtual-tour roboto">360° Virtual Tour</a>
                         <div class="google roboto">Google Street Panorama View</div>
                     </div>
                     <div class="tour-card">
@@ -120,7 +120,7 @@
                         <p class="section-title-forum text-card">Night Palace</p>
                         <div class="line2"></div>
                         <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652"
-                        class="around roboto">360° Virtual Tour</a>
+                        class="virtual-tour roboto">360° Virtual Tour</a>
                         <div class="google roboto">Google Street Panorama View</div>
                     </div>
 
@@ -133,19 +133,18 @@
         </div>
     </section>
     
-    <section class="dark">
+    <section class="dark" id="explore">
         <div class="container explore ">
 <div class="pictureExplore section">
 <div>
     <p class="section-title-forum frame2">Picture explore</p>
-    <div class="line-text"></div>
     <div class="roboto aboutPicture">
     <div>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</div>
-    <div class="border">It was cleaned in 1984 to remove a <span class="gold">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</div>
+    <div class="border">It was cleaned in 1984 to remove a <span class="marker">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</div>
     <div>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</div>    
 </div>
 </div>
-<div class="LasMeninasPicture ">
+<img src="/assets/img/LasMeninas.jpg" alt="LasMeninas-painting by Diego Velazquez">
 
 </div>
 </div>
@@ -154,7 +153,20 @@
         </div>
     </section>
     <section>
-        <div class="container"></div>
+        <div class="container" id="video">
+            <div class="video section">
+                <div class="flex">
+                <div class="video-journey section-title-forum gold">video journey</div>
+                <div class="content roboto">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</div>
+                <div class="videoLouvreMain">
+                <video src="#" poster="/assets/img/VideoLouvreMain.jpg"></video>
+                <button class="buttonPlay"></button>
+            </div>
+            </div>    
+                
+            </div>
+
+        </div>
     </section>
     <section>
         <div class="container"></div>
