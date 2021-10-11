@@ -283,8 +283,8 @@ letter-spacing: 2px;
 }
 /* start section video journey */
 .video{
-height: 900px;
-width: 1440px;
+height: 1246px;
+width: 100%;
 }
 .video-journey{
     font-size: 80px;
@@ -311,7 +311,6 @@ width: 1440px;
 .videoLouvreMain{
     position: relative;
     height:650px ;
-    width: 1440px;
     padding: 75px 0px 0px 0px;
 }
 .buttonPlay{
@@ -325,4 +324,146 @@ width: 1440px;
     left: 50%;
     transform: translate(-50%,-50%);
     border: none;
+}
+.control-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 85px;
+    width: 100%;
+    background-color: black;
+}
+.button-play-mini{
+    background: url(/assets/svg/buttonPlayMini.svg);
+    background-repeat: no-repeat;
+    height: 31px;
+    width: 26px;
+    border: none;
+}
+.video-progress{
+    background: linear-gradient(to right, #710707 0%, #710707 55%, #c4c4c4 55%, #c4c4c4 100%);
+    border-radius: 8px;
+    height: 15px;
+    width: 929px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+}
+.video-progress::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background:white;
+  }
+  .mute{
+    background: url(/assets/svg/mute.svg);
+    background-repeat: no-repeat;
+    height: 37px;
+    width: 40px;
+    border: none;
+  }
+  .volume-level{
+    background: linear-gradient(to right, #710707 0%, #710707 55%, #c4c4c4 55%, #c4c4c4 100%);
+    border-radius: 8px;
+    height: 15px;
+    width: 155px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+}
+
+  .volume-level::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background:white;
+  }
+  .full-screen{
+      height: 35px;
+      width: 40px;
+      background: url(/assets/svg/fullScreen.svg);
+      background-repeat: no-repeat;
+      border: none;
+  }
+.small-video{
+    position: relative;
+    background-image: url(/assets/img/exposition-Le\ Corps.jpg);
+    height: 254px;
+    width: 452px;
+    display: flex;
+}
+.small-video2{
+    position: relative;
+    background-image: url(/assets/img/Au\ Louvre.jpg);
+    height: 254px;
+    width: 452px;
+    display: flex;
+}
+.small-video3{
+    position: relative;
+    background-image: url(/assets/img/promenade.jpg);
+    height: 254px;
+    width: 452px;
+    display: flex;
+}
+.video-description{
+    width: 329px;
+    height: 39px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container2{
+    padding: 15px 65px 199px 10px;
+    height: 40px;
+    width: 406px;
+ 
+}
+.yotubeIcon{
+    position: absolute;
+    bottom: 103px;
+    left: 192px;
+    height: 48px;
+    width: 68px;
+}
+.flex-container{
+    display: flex;
+    justify-content:space-between ;
+    width: 100%;
+    margin: 40px 0px;
+}
+.video-slide {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #999999;
+    cursor: pointer;
+}
+  .video-slider-pagination {
+    width: 200px;
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+  .video-slide-button {
+    width: 10px;
+    height: 12px;
+    border: none;
+}
+  .video-next {
+    background-image: url('/assets/svg/left\ \(Stroke\).svg');
+}
+  .video-prev {
+    background-image: url('/assets/svg/right\ \(Stroke\).svg');
+}
+/* start section Art Gallery */
+.art-gallery{
+    height: 2200px;
 }
