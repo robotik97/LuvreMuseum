@@ -19,7 +19,15 @@ header main{
     margin: 0 auto;
 }
 :root {
-    --gold: #9d8665;  }
+    --gold: #9d8665;  
+    --font1: 18px;
+    --font2: 20px;
+    --font3: 22px;
+    --font4: 28px;
+    --font5: 32px;
+    --font6: 80px;
+  }
+
 .container {
     margin: 0 auto;
     width: 1440px;
@@ -27,6 +35,7 @@ header main{
 }
 .section-title-forum{
 font-family: 'Forum', cursive;
+color: var(--gold)
 }
 .roboto{
     font-family: 'Roboto', sans-serif;
@@ -36,9 +45,9 @@ font-family: 'Forum', cursive;
     padding-top: 75px;
     padding-bottom: 75px;
 }
-.gold{
+/* .gold{
     color: #9D8665;
-}
+} */
 .dark{
     background-color: black;
     color: white;
@@ -55,7 +64,7 @@ font-family: 'Forum', cursive;
     height: 33px;
     color:white;
     display:flex; 
-    font-size: 28px;
+    font-size: var(--font4);
     line-height: 31px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -72,7 +81,7 @@ font-family: 'Forum', cursive;
 nav a {
 font-family: 'Roboto', sans-serif;
 font-weight: 200;
-font-size: 22px;
+font-size: var(--font3);
 line-height: 26px;
 color:white;
 text-decoration: none;
@@ -95,7 +104,7 @@ list-style-type: none;
  }
 .picture{
     /* position: absolute; */
-    background-image: url('/assets/img/mona.svg');
+    background-image: url('/site-portfolio/assets/img/mona.svg');
     background-color: black;
     height: 750px;
     background-repeat: no-repeat;
@@ -107,7 +116,7 @@ list-style-type: none;
      padding: 150px 842px 272px 0px;    
  }
  .text {
-    font-size: 80px;
+    font-size: var(--font6);
     line-height: 90px;
     color: white;
     letter-spacing: 5px;
@@ -115,7 +124,7 @@ list-style-type: none;
  }
  .text2{
     font-weight: 300;
-    font-size: 28px;
+    font-size: var(--font4);
     line-height: 33px;
     letter-spacing: 2px;
     padding: 25px 0px;
@@ -129,7 +138,7 @@ list-style-type: none;
     height: 75px;
     border-radius: 15px;
     border: none;
-    font-size: 22px;
+    font-size: var(--font3);
     color: white;
     cursor: pointer;
 }
@@ -152,7 +161,7 @@ list-style-type: none;
     margin-left:10px;
 }
 .num-slide{
-    font-size: 20px;
+    font-size: var(--font2);
     line-height: 40px;
     padding-left:10px;
 }
@@ -202,10 +211,10 @@ list-style-type: none;
     width: 544px;
 }
 .text3{
-    font-size: 80px;
+    font-size: var(--font6);
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: #9D8665;
+    color: var(--gold)
 }
 
 .line{
@@ -223,7 +232,7 @@ list-style-type: none;
 .text-card{
     width: 252px;
     height: 35px;
-    font-size: 32px;
+    font-size: var(--font5);
     line-height: 35px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -239,7 +248,7 @@ list-style-type: none;
     width: 165px;
     height: 26px;
     font-weight: 200;
-    font-size: 22px;
+    font-size: var(--font3);
     line-height: 26px;
     color: black;
     padding: 10px 0px;
@@ -250,7 +259,7 @@ list-style-type: none;
     width: 240px;
     height: 21px;
     font-weight: 200;
-    font-size: 18px;
+    font-size: var(--font1);
     line-height: 21px;
     color: black;
 }
@@ -272,7 +281,7 @@ list-style-type: none;
     position: relative;
     width: 660px;
     height: 90px;
-    font-size: 80px;
+    font-size: var(--font6);
     line-height: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -288,7 +297,7 @@ list-style-type: none;
 }
 .aboutPicture{
     width: 660px;
-    font-size: 22px;
+    font-size: var(--font3);
     line-height: 38px;
     margin: 50px 0px;
 }
@@ -305,7 +314,7 @@ height: 1246px;
 width: 100%;
 }
 .video-journey{
-    font-size: 80px;
+    font-size: var(--font6);
     line-height: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -319,7 +328,7 @@ width: 100%;
     height:90px ;
     width: 720px;
     font-weight: 300;
-    font-size: 22px;
+    font-size: var(--font3);
     line-height: 38px;
     display: flex;
     align-items: center;
@@ -332,7 +341,7 @@ width: 100%;
     padding: 75px 0px 0px 0px;
 }
 .buttonPlay{
-    background: url(/assets/svg/buttonPlayMain.svg);
+    background: url(/site-portfolio/assets/svg/buttonPlayMain.svg);
     background-repeat: no-repeat;
     height: 200px;
     width: 200px;
@@ -352,7 +361,7 @@ width: 100%;
     background-color: black;
 }
 .button-play-mini{
-    background: url(/assets/svg/buttonPlayMini.svg);
+    background: url(/site-portfolio/assets/svg/buttonPlayMini.svg);
     background-repeat: no-repeat;
     height: 31px;
     width: 26px;
@@ -376,7 +385,7 @@ width: 100%;
     background:white;
   }
   .mute{
-    background: url(/assets/svg/mute.svg);
+    background: url(/site-portfolio/assets/svg/mute.svg);
     background-repeat: no-repeat;
     height: 37px;
     width: 40px;
@@ -403,27 +412,27 @@ width: 100%;
   .full-screen{
       height: 35px;
       width: 40px;
-      background: url(/assets/svg/fullScreen.svg);
+      background: url(/site-portfolio/assets/svg/fullScreen.svg);
       background-repeat: no-repeat;
       border: none;
   }
 .small-video{
     position: relative;
-    background-image: url(/assets/img/exposition-Le\ Corps.jpg);
+    background-image: url(/site-portfolio/assets/img/exposition-Le\ Corps.jpg);
     height: 254px;
     width: 452px;
     display: flex;
 }
 .small-video2{
     position: relative;
-    background-image: url(/assets/img/Au\ Louvre.jpg);
+    background-image: url(/site-portfolio/assets/img/Au\ Louvre.jpg);
     height: 254px;
     width: 452px;
     display: flex;
 }
 .small-video3{
     position: relative;
-    background-image: url(/assets/img/promenade.jpg);
+    background-image: url(/site-portfolio/assets/img/promenade.jpg);
     height: 254px;
     width: 452px;
     display: flex;
@@ -431,7 +440,7 @@ width: 100%;
 .video-description{
     width: 329px;
     height: 39px;
-    font-size: 18px;
+    font-size: var(--font1);
     color: white;
     display: flex;
     align-items: center;
@@ -476,10 +485,10 @@ width: 100%;
     border: none;
 }
   .video-next {
-    background-image: url('/assets/svg/left\ \(Stroke\).svg');
+    background-image: url('/site-portfolio/assets/svg/left\ \(Stroke\).svg');
 }
   .video-prev {
-    background-image: url('/assets/svg/right\ \(Stroke\).svg');
+    background-image: url('/site-portfolio/assets/svg/right\ \(Stroke\).svg');
 }
 /* start section Art Gallery */
 .art-gallery{
@@ -535,11 +544,11 @@ padding: 124px 0px 0px 0px;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    font-size: 28px;
+    font-size: var(--font4);
     
 }
 .text4{
-    font-size: 28px;
+    font-size: var(--font4);
     font-weight: bold;
 }
 .point {
@@ -548,7 +557,7 @@ padding: 124px 0px 0px 0px;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: var(--font3);
     user-select: none;
 }
     
@@ -626,12 +635,12 @@ padding: 124px 0px 0px 0px;
       justify-content: space-around;
   }
   .text5{
-    font-size: 22px;
+    font-size: var(--font3);
   }
   .clearButton{
       border: none;
       background: none;
-      font-size: 32px;
+      font-size: var(--font5);
       width: 19px;
   }
   .clearNumber{
@@ -639,7 +648,7 @@ padding: 124px 0px 0px 0px;
       width: 12px;
   }
   .total{
-      font-size: 33px;
+      font-size: var(--font5);
       font-weight: bold;
   }
   .total:after {
@@ -663,7 +672,7 @@ padding: 124px 0px 0px 0px;
 .parallax{
   width: 100%;
   height: 400px;
-  background-image:url('/assets/img/buyTickets/Computer_Wallpapers_Desktop_Backgrounds_Louvre_Museum_131593_KB.jpg');
+  background-image:url('/site-portfolio/assets/img/buyTickets/Computer_Wallpapers_Desktop_Backgrounds_Louvre_Museum_131593_KB.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -744,7 +753,7 @@ nav li{
     position: absolute;
     top: 318px;
     width: 142px;
-    font-size: 18px;
+    font-size: var(--font1);
 }
 .alignment{
     display: flex;
