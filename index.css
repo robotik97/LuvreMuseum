@@ -82,7 +82,7 @@ nav a {
   list-style-type: none;
 }
 .welcome-dark {
-  height: 810px;
+  height: var(--height2);
   background-color: black;
 }
 .welcome-white {
@@ -96,9 +96,9 @@ nav a {
 .picture {
   /* position: absolute; */
   background-image: url("/assets/img/mona.svg");
-  background-size: contain;
+  background-size: var(--background-size1);
   background-color: black;
-  height: var(--heightPicture);
+  /* height: var(--heightPicture); */
   background-repeat: no-repeat;
   background-position: calc(100%) 0;
 }
@@ -215,8 +215,8 @@ nav a {
   background: #710707;
 }
 .tour-card {
-  width: 440px;
-  height: 424px;
+  width: var(--width4);
+  height: var(--height3);
 }
 .text-card {
   width: 252px;
@@ -755,72 +755,81 @@ nav li {
   justify-content: center;
 }
 .hamburger {
-    display: none;
+  display: none;
 }
 .hamburger div {
-    width: 20px;
-    height: 3px;
-    background-color:white;
-    margin: 5px;
-    transition: all 0.3s ease;
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 @keyframes hamburgerFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 .toggle.line11 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle.line22 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .toggle.line33 {
-    transform: rotate(45deg) translate(5px, -6px);
+  transform: rotate(45deg) translate(5px, -6px);
 }
 :root {
-    --gold: #9d8665;
-    --font1: 18px;
-    --font2: 20px;
-    --font3: 22px;
-    --font4: 28px;
-    --font5: 32px;
-    --font6: 80px;
-    /* header */
-    --height1: 150px;
-    /* header main */
-    --width1: 1920px;
-    /* container */
-    --width2: 1440px;
-    /* welcomeLuvre */
-    --width3:598px;
-    --padding1:150px 0px 0px 0px;
+  --gold: #9d8665;
+  --font1: 18px;
+  --font2: 20px;
+  --font3: 22px;
+  --font4: 28px;
+  --font5: 32px;
+  --font6: 80px;
+  /* header */
+  --height1: 150px;
+  /* welcome-dark */
+  --height2: 810px;
+  /* header main */
+  --width1: 1920px;
+  /* container */
+  --width2: 1440px;
+  /* welcomeLuvre */
+  --width3: 598px;
+  --padding1: 150px 0px 0px 0px;
+  /* Mona background */
+  --background-size1: contain;
+  /* tour-card */
+  --width4: 440px;
+  --height3: 424px;
+}
+@media (max-width: 1024px) {
+  :root {
+    --height1: 130px;
+    --width1: 1024px;
+    --width2: 984px;
+    --padding1: 50px 0px 0px 0px;
+    --heightPicture: 585px;
+    /* welcome-dark */
+    --height2:585px;
     /* Mona background */
-    --heightPicture: 750px;
+  --background-size1: 700px 525px;
+    /* tour-card */
+    --width4: 330px;
+    --height3: 345px;
   }
-  @media (max-width: 1024px) {
-      :root {
-        --height1: 130px;
-        --width1: 1024px;
-        --width2: 984px;
-        --padding1:50px 0px 0px 0px;
-        --heightPicture: 585px;
-      }
-      .hamburger{
-        display: block;
-        cursor: pointer;
-    }
-    .nav-list {
-        display: none;
-        
-    }
-
-    }
-  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-list {
+    display: none;
+  }
+}
