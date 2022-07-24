@@ -96,15 +96,16 @@ nav a {
 .picture {
   /* position: absolute; */
   background-image: url("/assets/img/mona.svg");
+  background-size: contain;
   background-color: black;
-  height: 750px;
+  height: var(--heightPicture);
   background-repeat: no-repeat;
   background-position: calc(100%) 0;
 }
 .welcomeLuvre {
-  /* width: 598px; */
+  width: var(--width3);
   height: 388px;
-  padding: 150px 842px 272px 0px;
+  padding: var(--padding1);
 }
 .text {
   font-size: var(--font6);
@@ -798,12 +799,19 @@ nav li {
     --width1: 1920px;
     /* container */
     --width2: 1440px;
+    /* welcomeLuvre */
+    --width3:598px;
+    --padding1:150px 0px 0px 0px;
+    /* Mona background */
+    --heightPicture: 750px;
   }
   @media (max-width: 1024px) {
       :root {
         --height1: 130px;
         --width1: 1024px;
         --width2: 984px;
+        --padding1:50px 0px 0px 0px;
+        --heightPicture: 585px;
       }
       .hamburger{
         display: block;
