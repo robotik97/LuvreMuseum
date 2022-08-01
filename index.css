@@ -184,7 +184,7 @@ nav a {
 /*  start section Virtual Tour */
 .virtualTour {
   height: var(--height4);
- }
+}
 .table {
   position: initial;
   margin-top: var(top1);
@@ -193,7 +193,6 @@ nav a {
   flex-wrap: wrap;
   justify-content: var(--justify-content1);
   align-content: space-between;
-
 }
 .frame {
   position: relative;
@@ -258,18 +257,19 @@ nav a {
 }
 /* start section Picture explore */
 .explore {
-  height: 865px;
+  height: var(--height5);
 }
 .pictureExplore {
-  height: 715px;
+  height: var(--height6);
   width: 100%;
   display: flex;
   /* outline: violet solid; */
   justify-content: space-between;
+  flex-wrap: var(--flex-wrap1);
 }
 .frame2 {
   position: relative;
-  width: 660px;
+  width: var(--width5);
   height: 90px;
   font-size: var(--font6);
   line-height: 90px;
@@ -286,7 +286,7 @@ nav a {
   left: 0px;
 }
 .aboutPicture {
-  width: 660px;
+  width: var(--width5);
   font-size: var(--font3);
   line-height: 38px;
   margin: 50px 0px;
@@ -786,6 +786,12 @@ nav li {
 .toggle.line33 {
   transform: rotate(45deg) translate(5px, -6px);
 }
+.hide {
+  display: var(--hide);
+}
+.centerPicture {
+  margin: var(--centerPicture);
+}
 :root {
   --gold: #9d8665;
   --font1: 18px;
@@ -820,8 +826,15 @@ nav li {
   /* virtual tour */
   --height4: 1116px;
   --margin-bottom1: 75px;
-
+  /* picture explore */
+  --height5: 865px;
+  --flex-wrap1: nowrap;
+  --hide: block;
+  --centerPicture: 0;
+  --width5: 660px;
+  --height6: 715px;
 }
+
 @media (max-width: 1024px) {
   :root {
     --height1: 130px;
@@ -830,12 +843,12 @@ nav li {
     --padding1: 50px 0px 0px 0px;
     --heightPicture: 585px;
     /* welcome-dark */
-    --height2:585px;
+    --height2: 585px;
     /* section */
-  --padding-top1: 60px;
-  --padding-bottom1: 60px;
+    --padding-top1: 60px;
+    --padding-bottom1: 60px;
     /* Mona background */
-  --background-size1: 700px 525px;
+    --background-size1: 700px 525px;
     /* tour-card */
     --width4: 330px;
     --height3: 345px;
@@ -844,11 +857,17 @@ nav li {
     --top1: 218px;
     --margin-botton1: 60px;
     /* virtual tour */
-    --font6:50px;
+    --font6: 50px;
     --height4: 1313px;
-    
-     
+    /* picture explore */
+    --height5: 1149px;
+    --flex-wrap1: wrap;
+    --hide: none;
+    --centerPicture: 0 auto;
+    --width5: 984px;
+    --height6: 1029px;
   }
+
   .hamburger {
     display: block;
     cursor: pointer;
