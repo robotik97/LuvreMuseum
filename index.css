@@ -4,7 +4,7 @@
 }
 html {
   scroll-behavior: smooth;
-  /* overflow-x:hidden; */
+  overflow-x: hidden;
 }
 header {
   height: var(--height1);
@@ -300,12 +300,12 @@ nav a {
 }
 /* start section video journey */
 .video {
-  height: 1246px;
+  height: var(--height8);
   width: 100%;
 }
 .video-journey {
   font-size: var(--font6);
-  line-height: 90px;
+  line-height: var(--height9);
   letter-spacing: 5px;
   text-transform: uppercase;
 }
@@ -327,7 +327,8 @@ nav a {
 /* video player large */
 .videoLouvreMain {
   position: relative;
-  height: 650px;
+  width: var(--width6);
+  height: var(--height7);
   padding: 75px 0px 0px 0px;
 }
 .buttonPlay {
@@ -421,22 +422,22 @@ nav a {
 .small-video {
   position: relative;
   background-image: url(/assets/img/exposition-Le\ Corps.jpg);
-  height: 254px;
-  width: 452px;
+  height: var(--height10);
+  width: var(--width7);
   display: flex;
 }
 .small-video2 {
   position: relative;
   background-image: url(/assets/img/Au\ Louvre.jpg);
-  height: 254px;
-  width: 452px;
+  height: var(--height10);
+  width: var(--width7);
   display: flex;
 }
 .small-video3 {
   position: relative;
   background-image: url(/assets/img/promenade.jpg);
-  height: 254px;
-  width: 452px;
+  height: var(--height10);
+  width: var(--width7);
   display: flex;
 }
 .video-description {
@@ -833,6 +834,13 @@ nav li {
   --centerPicture: 0;
   --width5: 660px;
   --height6: 715px;
+  /* videoLouvreMain */
+  --width6:1440px;
+  --height7:735px;
+  --height8:1246px;
+  --height9:90px;
+  --height10:254px;
+  --width7:452px;
 }
 
 @media (max-width: 1024px) {
@@ -852,6 +860,7 @@ nav li {
     /* tour-card */
     --width4: 330px;
     --height3: 345px;
+    --font5: 23px;
     /* table */
     --justify-content1: space-evenly;
     --top1: 218px;
@@ -866,6 +875,13 @@ nav li {
     --centerPicture: 0 auto;
     --width5: 984px;
     --height6: 1029px;
+    /* videoLouvreMain */
+  --width6:984px;
+  --height7:504px;
+  --height8:881px;
+  --height9:75px;
+  --height10:170px;
+  --width7:300px;
   }
 
   .hamburger {
