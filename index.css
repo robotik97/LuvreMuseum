@@ -494,7 +494,7 @@ nav a {
 }
 /* start section Art Gallery */
 .art-gallery {
-  height: 2200px;
+  height:var(--height11);
 }
 .grid {
   position: relative;
@@ -518,9 +518,9 @@ nav a {
 }
 .gradient {
   position: absolute;
-  width: 1440px;
-  height: 360px;
-  top: 1675px;
+  width: var(--width2);
+  height: var(--height12);
+  top: var(--top1);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 /* start section buy tickets */
@@ -841,6 +841,11 @@ nav li {
   --height9:90px;
   --height10:254px;
   --width7:452px;
+  /* art gallery */
+  --height11:2200px;
+  --height12:360px;
+  --top1:1675px;
+  
 }
 
 @media (max-width: 1024px) {
@@ -882,6 +887,11 @@ nav li {
   --height9:75px;
   --height10:170px;
   --width7:300px;
+  /* art gallery */
+  --height11:1575px;
+  --height12:174px;
+  --top1:1250px;
+  
   }
 
   .hamburger {
@@ -891,4 +901,8 @@ nav li {
   .nav-list {
     display: none;
   }
+  .minimize {
+    width: 304px;
+  }
 }
+
