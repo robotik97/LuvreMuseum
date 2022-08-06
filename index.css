@@ -527,6 +527,7 @@ nav a {
 .buy-tickets {
   position: relative;
   height: var(--height13);
+  
 }
 
 .picture-position {
@@ -552,6 +553,7 @@ nav a {
 .text4 {
   font-size: var(--font4);
   font-weight: bold;
+  padding-bottom: 50px;
 }
 .point {
   display: block;
@@ -613,13 +615,13 @@ nav a {
 .number-of-tickets {
   position: absolute;
   right: 0px;
-  top: 267px;
+  top: var(--top3);
   height: 341px;
   width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  top: 170px;
+  
 }
 
 .number {
@@ -699,6 +701,8 @@ nav a {
   position: absolute;
   top: 267px;
   right: 0px;
+  width: var(--width9);
+  height: var(--height15);
 }
 /* start section contacts */
 footer {
@@ -857,6 +861,11 @@ nav li {
   --width8: 720px;
   --height14: 550px;
   --bottom3: 182px;
+  --top3:267px;
+  /* contacts */
+  --width9:960px;
+  --height15:620px;
+
 }
 
 @media (max-width: 1024px) {
@@ -910,7 +919,10 @@ nav li {
   --width8:700px;
   --height14: 440px;
   --bottom3: 100px;
-  
+  --top3:170px;
+  /* contacts */
+  --width9:694px;
+  --height15:545px;
   }
 
   .hamburger {
