@@ -554,6 +554,7 @@ nav a {
   font-size: var(--font4);
   font-weight: bold;
   padding-bottom: 50px;
+  width: var(--width10);
 }
 .point {
   display: block;
@@ -714,7 +715,7 @@ footer {
 }
 .logo2 {
   position: absolute;
-  top: 75px;
+  top: var(--top4);
   left: 0px;
 }
 .group1 .group2 {
@@ -726,8 +727,8 @@ footer {
 
 .navi {
   position: absolute;
-  top: 87px;
-  left: 340px;
+  top: var(--top5);
+  left: var(--left2);
 
   display: flex;
   justify-content: space-between;
@@ -740,7 +741,7 @@ footer {
   height: 48px;
   width: 340px;
   position: absolute;
-  top: 162px;
+  top: var(--top6);
   right: 0px;
 }
 nav li {
@@ -748,10 +749,9 @@ nav li {
 }
 .line3 {
   position: absolute;
-  top: 265px;
-  left: -240px;
+  top: var(--top7);
   height: 3px;
-  width: 1920px;
+  width: var(--width11);
   background: #666666;
 }
 .year {
@@ -865,6 +865,15 @@ nav li {
   /* contacts */
   --width9:960px;
   --height15:620px;
+  --width10:227px;
+  /* footer */
+  --top4:75px;
+  --top5:87px;
+  --left2:340px;
+  --top6:162px;
+  --top7:265px;
+  --width11:1440px;
+  
 
 }
 
@@ -923,6 +932,15 @@ nav li {
   /* contacts */
   --width9:694px;
   --height15:545px;
+  --width10:208px;
+  /* footer */
+  --top4:60px;
+  --top5:65px;
+  --left2:239px;
+  --top6:80px;
+  --top7:243px;
+  --width11:984px;
+  
   }
 
   .hamburger {
