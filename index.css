@@ -19,11 +19,9 @@ header main {
   width: var(--width1);
   margin: 0 auto;
 }
-
 .container {
   margin: 0 auto;
   width: var(--width2);
-  /* outline: 1px solid violet; */
 }
 .section-title-forum {
   font-family: "Forum", cursive;
@@ -37,9 +35,6 @@ header main {
   padding-top: var(--padding-top1);
   padding-bottom: var(--padding-bottom1);
 }
-/* .gold{
-    color: #9D8665;
-} */
 .dark {
   background-color: black;
   color: white;
@@ -94,11 +89,9 @@ nav a {
   position: relative;
 }
 .picture {
-  /* position: absolute; */
   background-image: url("/assets/img/mona.svg");
   background-size: var(--background-size1);
   background-color: black;
-  /* height: var(--heightPicture); */
   background-repeat: no-repeat;
   background-position: calc(100%) 0;
 }
@@ -123,7 +116,6 @@ nav a {
   color: white;
   font-family: "Roboto", sans-serif;
 }
-
 .discover {
   background-color: #710707;
   width: 360px;
@@ -180,7 +172,6 @@ nav a {
 .cursor-right {
   transform: rotate(180deg);
 }
-
 /*  start section Virtual Tour */
 .virtualTour {
   height: var(--height4);
@@ -205,7 +196,6 @@ nav a {
   text-transform: uppercase;
   color: var(--gold);
 }
-
 .line {
   margin-bottom: var(--margin-bottom1);
   height: 3px;
@@ -263,7 +253,6 @@ nav a {
   height: var(--height6);
   width: 100%;
   display: flex;
-  /* outline: violet solid; */
   justify-content: space-between;
   flex-wrap: var(--flex-wrap1);
 }
@@ -291,7 +280,6 @@ nav a {
   line-height: 38px;
   margin: 50px 0px;
 }
-
 .border {
   margin: 25px 0px;
 }
@@ -403,7 +391,6 @@ nav a {
   transition: background 450ms ease-in;
   -webkit-appearance: none;
 }
-
 .volume-level::-webkit-slider-thumb {
   width: 20px;
   height: 20px;
@@ -494,7 +481,7 @@ nav a {
 }
 /* start section Art Gallery */
 .art-gallery {
-  height:var(--height11);
+  height: var(--height11);
 }
 .grid {
   position: relative;
@@ -527,16 +514,13 @@ nav a {
 .buy-tickets {
   position: relative;
   height: var(--height13);
-  
 }
-
 .picture-position {
   position: absolute;
   left: 0px;
   bottom: var(--bottom1);
-  width: var(--width8) ;
+  width: var(--width8);
   height: var(--height14);
-
 }
 .ticket-type {
   position: absolute;
@@ -549,7 +533,7 @@ nav a {
   justify-content: space-between;
   flex-direction: column;
   font-size: var(--font4);
-  }
+}
 .text4 {
   font-size: var(--font4);
   font-weight: bold;
@@ -565,7 +549,6 @@ nav a {
   font-size: var(--font3);
   user-select: none;
 }
-
 /* Hide the browser's default radio button */
 .clear {
   position: absolute;
@@ -581,29 +564,24 @@ nav a {
   background-color: #eee;
   border-radius: 50%;
 }
-
 /* On mouse-over, add a grey background color */
 .point:hover input ~ .checkmark {
   background-color: rgba(209, 205, 205, 0.705);
 }
-
 /* When the radio button is checked, add a blue background */
 .point input:checked ~ .checkmark {
   background-color: black;
 }
-
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-
 /* Show the indicator (dot/circle) when checked */
 .point input:checked ~ .checkmark:after {
   display: block;
 }
-
 /* Style the indicator (dot/circle) */
 .point .checkmark:after {
   top: 5px;
@@ -622,12 +600,9 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
-
 .number {
   all: unset;
-  /* width: 3em; */
   text-align: center;
 }
 .number-tickets {
@@ -724,7 +699,6 @@ footer {
   justify-content: flex-start;
   text-decoration: none;
 }
-
 .navi {
   position: absolute;
   top: var(--top5);
@@ -787,11 +761,9 @@ nav li {
 .toggle.line11 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-
 .toggle.line22 {
   opacity: 0;
 }
-
 .toggle.line33 {
   transform: rotate(45deg) translate(5px, -6px);
 }
@@ -843,40 +815,37 @@ nav li {
   --width5: 660px;
   --height6: 715px;
   /* videoJourney */
-  --width6:1440px;
-  --height7:735px;
-  --height8:1246px;
-  --height9:90px;
-  --height10:254px;
-  --width7:452px;
-  --bottom2:103px;
-  --left1:192px;
+  --width6: 1440px;
+  --height7: 735px;
+  --height8: 1246px;
+  --height9: 90px;
+  --height10: 254px;
+  --width7: 452px;
+  --bottom2: 103px;
+  --left1: 192px;
   /* art gallery */
-  --height11:2200px;
-  --height12:360px;
-  --top2:1675px;
+  --height11: 2200px;
+  --height12: 360px;
+  --top2: 1675px;
   /* buy tickets */
   --height13: 743px;
   --bottom1: 75px;
   --width8: 720px;
   --height14: 550px;
   --bottom3: 182px;
-  --top3:267px;
+  --top3: 267px;
   /* contacts */
-  --width9:960px;
-  --height15:620px;
-  --width10:227px;
+  --width9: 960px;
+  --height15: 620px;
+  --width10: 227px;
   /* footer */
-  --top4:75px;
-  --top5:87px;
-  --left2:340px;
-  --top6:162px;
-  --top7:265px;
-  --width11:1440px;
-  
-
+  --top4: 75px;
+  --top5: 87px;
+  --left2: 340px;
+  --top6: 162px;
+  --top7: 265px;
+  --width11: 1440px;
 }
-
 @media (max-width: 1024px) {
   :root {
     --height1: 130px;
@@ -910,39 +879,37 @@ nav li {
     --width5: 984px;
     --height6: 1029px;
     /* videoJourney */
-  --width6:984px;
-  --height7:504px;
-  --height8:881px;
-  --height9:75px;
-  --height10:170px;
-  --width7:300px;
-  --bottom2:65px;
-  --left1:115px;
-  /* art gallery */
-  --height11:1575px;
-  --height12:174px;
-  --top2:1250px;
-  /* buy tickets */
-  --height13: 598px;
-  --bottom1: 100px;
-  --width8:700px;
-  --height14: 440px;
-  --bottom3: 100px;
-  --top3:170px;
-  /* contacts */
-  --width9:694px;
-  --height15:545px;
-  --width10:208px;
-  /* footer */
-  --top4:60px;
-  --top5:65px;
-  --left2:239px;
-  --top6:80px;
-  --top7:243px;
-  --width11:984px;
-  
+    --width6: 984px;
+    --height7: 504px;
+    --height8: 881px;
+    --height9: 75px;
+    --height10: 170px;
+    --width7: 300px;
+    --bottom2: 65px;
+    --left1: 115px;
+    /* art gallery */
+    --height11: 1575px;
+    --height12: 174px;
+    --top2: 1250px;
+    /* buy tickets */
+    --height13: 598px;
+    --bottom1: 100px;
+    --width8: 700px;
+    --height14: 440px;
+    --bottom3: 100px;
+    --top3: 170px;
+    /* contacts */
+    --width9: 694px;
+    --height15: 545px;
+    --width10: 208px;
+    /* footer */
+    --top4: 60px;
+    --top5: 65px;
+    --left2: 239px;
+    --top6: 80px;
+    --top7: 243px;
+    --width11: 984px;
   }
-
   .hamburger {
     display: block;
     cursor: pointer;
@@ -954,4 +921,3 @@ nav li {
     width: 304px;
   }
 }
-
