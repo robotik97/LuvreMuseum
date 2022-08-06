@@ -456,8 +456,8 @@ nav a {
 }
 .yotubeIcon {
   position: absolute;
-  bottom: 103px;
-  left: 192px;
+  bottom: var(--bottom2);
+  left: var(--left1);
   height: 48px;
   width: 68px;
 }
@@ -520,19 +520,22 @@ nav a {
   position: absolute;
   width: var(--width2);
   height: var(--height12);
-  top: var(--top1);
+  top: var(--top2);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 /* start section buy tickets */
 .buy-tickets {
   position: relative;
-  height: 743px;
+  height: var(--height13);
 }
 
 .picture-position {
   position: absolute;
   left: 0px;
-  bottom: 75px;
+  bottom: var(--bottom1);
+  width: var(--width8) ;
+  height: var(--height14);
+
 }
 .ticket-type {
   position: absolute;
@@ -545,7 +548,7 @@ nav a {
   justify-content: space-between;
   flex-direction: column;
   font-size: var(--font4);
-}
+  }
 .text4 {
   font-size: var(--font4);
   font-weight: bold;
@@ -616,6 +619,7 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  top: 170px;
 }
 
 .number {
@@ -664,7 +668,7 @@ nav a {
   width: 175px;
   position: absolute;
   right: 0px;
-  bottom: 182px;
+  bottom: var(--bottom3);
 }
 /* parallax */
 .parallax {
@@ -834,18 +838,25 @@ nav li {
   --centerPicture: 0;
   --width5: 660px;
   --height6: 715px;
-  /* videoLouvreMain */
+  /* videoJourney */
   --width6:1440px;
   --height7:735px;
   --height8:1246px;
   --height9:90px;
   --height10:254px;
   --width7:452px;
+  --bottom2:103px;
+  --left1:192px;
   /* art gallery */
   --height11:2200px;
   --height12:360px;
-  --top1:1675px;
-  
+  --top2:1675px;
+  /* buy tickets */
+  --height13: 743px;
+  --bottom1: 75px;
+  --width8: 720px;
+  --height14: 550px;
+  --bottom3: 182px;
 }
 
 @media (max-width: 1024px) {
@@ -880,17 +891,25 @@ nav li {
     --centerPicture: 0 auto;
     --width5: 984px;
     --height6: 1029px;
-    /* videoLouvreMain */
+    /* videoJourney */
   --width6:984px;
   --height7:504px;
   --height8:881px;
   --height9:75px;
   --height10:170px;
   --width7:300px;
+  --bottom2:65px;
+  --left1:115px;
   /* art gallery */
   --height11:1575px;
   --height12:174px;
-  --top1:1250px;
+  --top2:1250px;
+  /* buy tickets */
+  --height13: 598px;
+  --bottom1: 100px;
+  --width8:700px;
+  --height14: 440px;
+  --bottom3: 100px;
   
   }
 
