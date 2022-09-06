@@ -58,7 +58,7 @@ header main {
   text-transform: uppercase;
   justify-content: space-between;
 }
-.nav-list {
+.links {
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -89,11 +89,12 @@ nav a {
   position: relative;
 }
 .picture {
-  background-image: url("/assets/img/mona.svg");
+  background-image: url("./assets/img/mona.svg");
   background-size: var(--background-size1);
   background-color: black;
   background-repeat: no-repeat;
   background-position: calc(100%) 0;
+  height: var(--height16);
 }
 .welcomeLuvre {
   width: var(--width3);
@@ -286,6 +287,9 @@ nav a {
 .marker {
   color: #caaa7d;
 }
+.centerPicture{
+  margin: var(--centerPicture);
+}
 /* start section video journey */
 .video {
   height: var(--height8);
@@ -320,7 +324,7 @@ nav a {
   padding: 75px 0px 0px 0px;
 }
 .buttonPlay {
-  background: url(/assets/svg/buttonPlayMain.svg);
+  background: url(./assets/svg/buttonPlayMain.svg);
   background-repeat: no-repeat;
   height: 200px;
   width: 200px;
@@ -340,7 +344,7 @@ nav a {
   background-color: black;
 }
 .button-play-mini {
-  background: url(/assets/svg/buttonPlayMini.svg);
+  background: url(./assets/svg/buttonPlayMini.svg);
   background-repeat: no-repeat;
   height: 31px;
   width: 26px;
@@ -370,7 +374,7 @@ nav a {
   background: white;
 }
 .mute {
-  background: url(/assets/svg/mute.svg);
+  background: url(./assets/svg/mute.svg);
   background-repeat: no-repeat;
   height: 37px;
   width: 40px;
@@ -402,27 +406,27 @@ nav a {
 .full-screen {
   height: 35px;
   width: 40px;
-  background: url(/assets/svg/fullScreen.svg);
+  background: url(./assets/svg/fullScreen.svg);
   background-repeat: no-repeat;
   border: none;
 }
 .small-video {
   position: relative;
-  background-image: url(/assets/img/exposition-Le\ Corps.jpg);
+  background-image: url(./assets/img/exposition-Le\ Corps.jpg);
   height: var(--height10);
   width: var(--width7);
   display: flex;
 }
 .small-video2 {
   position: relative;
-  background-image: url(/assets/img/Au\ Louvre.jpg);
+  background-image: url(./assets/img/Au\ Louvre.jpg);
   height: var(--height10);
   width: var(--width7);
   display: flex;
 }
 .small-video3 {
   position: relative;
-  background-image: url(/assets/img/promenade.jpg);
+  background-image: url(./assets/img/promenade.jpg);
   height: var(--height10);
   width: var(--width7);
   display: flex;
@@ -474,10 +478,10 @@ nav a {
   border: none;
 }
 .video-next {
-  background-image: url("/assets/svg/left\ \(Stroke\).svg");
+  background-image: url("./assets/svg/left\ \(Stroke\).svg");
 }
 .video-prev {
-  background-image: url("/assets/svg/right\ \(Stroke\).svg");
+  background-image: url("./assets/svg/right\ \(Stroke\).svg");
 }
 /* start section Art Gallery */
 .art-gallery {
@@ -548,6 +552,9 @@ nav a {
   cursor: pointer;
   font-size: var(--font3);
   user-select: none;
+}
+.hide{
+  display: var(--hide);
 }
 /* Hide the browser's default radio button */
 .clear {
@@ -652,7 +659,7 @@ nav a {
 .parallax {
   width: 100%;
   height: 400px;
-  background-image: url("/assets/img/buyTickets/Computer_Wallpapers_Desktop_Backgrounds_Louvre_Museum_131593_KB.jpg");
+  background-image: url("./assets/img/buyTickets/Computer_Wallpapers_Desktop_Backgrounds_Louvre_Museum_131593_KB.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -738,41 +745,7 @@ nav li {
   display: flex;
   justify-content: center;
 }
-.hamburger {
-  display: none;
-}
-.hamburger div {
-  width: 20px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-@keyframes hamburgerFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-.toggle.line11 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle.line22 {
-  opacity: 0;
-}
-.toggle.line33 {
-  transform: rotate(45deg) translate(5px, -6px);
-}
-.hide {
-  display: var(--hide);
-}
-.centerPicture {
-  margin: var(--centerPicture);
-}
+
 :root {
   --gold: #9d8665;
   --font1: 18px;
@@ -785,6 +758,7 @@ nav li {
   --height1: 150px;
   /* welcome-dark */
   --height2: 810px;
+  --height16: 750px;
   /* header main */
   --width1: 1920px;
   /* container */
@@ -855,6 +829,7 @@ nav li {
     --heightPicture: 585px;
     /* welcome-dark */
     --height2: 585px;
+    --height16: 525px;
     /* section */
     --padding-top1: 60px;
     --padding-bottom1: 60px;
@@ -872,7 +847,7 @@ nav li {
     --font6: 50px;
     --height4: 1313px;
     /* picture explore */
-    --height5: 1149px;
+    --height5: 1145px;
     --flex-wrap1: wrap;
     --hide: none;
     --centerPicture: 0 auto;
@@ -910,14 +885,83 @@ nav li {
     --top7: 243px;
     --width11: 984px;
   }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
   .nav-list {
     display: none;
   }
   .minimize {
     width: 304px;
+  }
+  /* Adaptive menu */
+  .hamburger {
+    display: none;
+}
+
+.hamburger div {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        background-color: #46127A;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .links li{
+        opacity: 0;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+.link-active {
+transform: translateX(0%);
+
+}
+
+
+@keyframes hamburgerFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle.line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle.line2 {
+    opacity: 0;
+}
+
+.toggle.line3 {
+    transform: rotate(45deg) translate(5px, -6px);
+}
+  .hamburger {
+    display: block;
+    cursor: pointer;
   }
 }
