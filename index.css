@@ -847,14 +847,11 @@ nav li {
     --font6: 50px;
     --height4: 1313px;
     /* picture explore */
-<<<<<<< HEAD
     --height5: 1145px;
-=======
     --height5: 1240px;
->>>>>>> 7d7992593e640d180ba211590953000c1418f9e2
     --flex-wrap1: wrap;
     --hide: none;
-    --centerPicture: 0 auto;
+    --centerPicture: 0px 132px;
     --width5: 984px;
     --height6: 1029px;
     /* videoJourney */
