@@ -16,7 +16,7 @@ const navMenu = () => {
         }s`;
       }
     });
-    //Hamburger animationn
+    //Hamburger animation
     hamburger.classList.toggle("toggle");
   };
 };
