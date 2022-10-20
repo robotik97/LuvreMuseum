@@ -133,7 +133,7 @@ nav a {
   bottom: 0;
 }
 .block-slider {
-  width: 600px;
+  width: var(--width13);
   height: 120px;
   background-color: black;
   display: flex;
@@ -759,6 +759,7 @@ nav li {
   /* welcome-dark */
   --height2: 810px;
   --height16: 750px;
+  --width13: 600px;
   /* header main */
   --width1: 1920px;
   /* container */
@@ -831,6 +832,7 @@ nav li {
     /* welcome-dark */
     --height2: 585px;
     --height16: 525px;
+    --width13: 700px;
     /* section */
     --padding-top1: 60px;
     --padding-bottom1: 60px;
@@ -923,7 +925,7 @@ nav li {
     position: absolute;
     right: 0px;
     height: 56vh;
-    top: 15vh;
+    top: 12vh;
     display: flex;
     flex-direction: column;
     align-items: center;
