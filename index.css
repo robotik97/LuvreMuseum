@@ -801,6 +801,7 @@ nav li {
   --height11: 2200px;
   --height12: 360px;
   --top2: 1675px;
+  --width12: 456px;
   /* buy tickets */
   --height13: 743px;
   --bottom1: 75px;
@@ -867,6 +868,7 @@ nav li {
     --height11: 1575px;
     --height12: 174px;
     --top2: 1250px;
+    --width12: 304px;
     /* buy tickets */
     --height13: 598px;
     --bottom1: 100px;
@@ -891,7 +893,7 @@ nav li {
   display: none;
 }
 .minimize {
-  width: 304px;
+  width: var(--width12);
 }
 /* Adaptive menu */
 .links a {
@@ -954,15 +956,15 @@ nav li {
   }
 }
 
-.toggle.line11 {
+.toggle .line11 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.toggle.line22 {
+.toggle .line22 {
   opacity: 0;
 }
 
-.toggle.line33 {
-  transform: rotate(45deg) translate(5px, -6px);
+.toggle .line33 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 }
