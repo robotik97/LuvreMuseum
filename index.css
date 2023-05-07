@@ -924,7 +924,7 @@ nav li {
   .links {
     position: absolute;
     right: 0px;
-    height: 56vh;
+    height: 62vh;
     top: 12vh;
     display: flex;
     flex-direction: column;
