@@ -1,3 +1,4 @@
+// Hamburger Menu
 const navMenu = () => {
   const hamburger = document.querySelector(".hamburger");
   const links = document.querySelector(".links");
@@ -21,3 +22,23 @@ const navMenu = () => {
   };
 };
 navMenu();
+
+// Slider
+// start of image offset from the left edge
+let offset = 0; 
+const sliderLine = document.querySelector(".slider-line");
+
+document.querySelector(".cursor-left").addEventListener("click", function () {
+  offset += 1000;
+  if (offset > 4000) {
+    offset = 0;
+  }
+  sliderLine.style.left = `${-offset}px`;
+});
+document.querySelector(".cursor-right").addEventListener("click", function () {
+  offset -= 1000;
+  if (offset < 0) {
+    offset = 4000;
+  }
+  sliderLine.style.left = `${-offset}px`;
+});
