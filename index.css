@@ -75,7 +75,7 @@ nav a {
   text-decoration: none;
   letter-spacing: 2px;
   list-style-type: none;
-} 
+}
 .welcome-dark {
   height: var(--height2);
   background-color: black;
@@ -96,23 +96,23 @@ nav a {
   position: absolute;
 }
 .slider {
-  width: 1000px;
-  height: 750px;
+  width: var(--width16);
+  height: var(--height18);
   top: 0px;
   left: 435px;
   position: absolute;
   overflow: hidden;
 }
-.gradi{
+.gradi {
   position: absolute;
   width: 500px;
-  height: 750px;
+  height: var(--height19);
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   z-index: 1;
 }
-.slider-line{
-  width: 5000px;
-  height: 750px;
+.slider-line {
+  width: var(--width15);
+  height: var(--height17);
   display: flex;
   position: relative;
   left: 0px;
@@ -120,26 +120,30 @@ nav a {
 }
 .slide1 {
   background-image: url("./assets/img/welcome-slider/1.jpg");
-  width: 1000px;
+  background-size: var(--background-size1);
+  width: var(--width14);
 }
 .slide2 {
   background-image: url("./assets/img/welcome-slider/2.jpg");
-  width: 1000px
+  background-size: var(--background-size1);
+  width: var(--width14);
 }
 .slide3 {
   background-image: url("./assets/img/welcome-slider/3.jpg");
-  width: 1000px
+  background-size: var(--background-size1);
+  width: var(--width14);
 }
 .slide4 {
   background-image: url("./assets/img/welcome-slider/4.jpg");
-  width: 1000px
- }
+  background-size: var(--background-size1);
+  width: var(--width14);
+}
 .slide5 {
   background-image: url("./assets/img/welcome-slider/5.jpg");
-  width: 1000px
-  
+  background-size: var(--background-size1);
+  width: var(--width14);
 }
- .text {
+.text {
   font-size: var(--font6);
   line-height: 90px;
   color: white;
@@ -808,6 +812,12 @@ nav li {
   --padding1: 150px 0px 0px 0px;
   /* Mona background */
   --background-size1: contain;
+  --width14: 1000px;
+  --width15: 5000px;
+  --height17: 750px;
+  --width16: 1000px;
+  --height18: 750px;
+  --height19: 750px;
   /* tour-card */
   --width4: 440px;
   --height3: 424px;
@@ -873,7 +883,13 @@ nav li {
     --padding-top1: 60px;
     --padding-bottom1: 60px;
     /* Mona background */
-    --background-size1: 700px 525px;
+    --background-size1: contain;
+    --width14: 700px;
+    --width15: 3500px;
+    --height17: 425px;
+    --width16: 700px;
+    --height18: 525px;
+    --height19: 425px;
     /* tour-card */
     --width4: 330px;
     --height3: 345px;

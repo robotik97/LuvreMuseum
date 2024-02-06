@@ -24,21 +24,21 @@ const navMenu = () => {
 navMenu();
 
 // Slider
-// start of image offset from the left edge
-let offset = 0; 
-const sliderLine = document.querySelector(".slider-line");
-
+let sliderCount = 0;
+let sliderWidth = document.querySelector(".slider").offsetWidth;
+let sliderLine = document.querySelector(".slider-line");
+let sliderLineWidth = document.querySelector(".slider-line").offsetWidth;
 document.querySelector(".cursor-left").addEventListener("click", function () {
-  offset += 1000;
-  if (offset > 4000) {
-    offset = 0;
+  sliderCount += sliderWidth;
+  if (sliderCount > sliderLineWidth - sliderWidth) {
+    sliderCount = 0;
   }
-  sliderLine.style.left = `${-offset}px`;
+  sliderLine.style.left = `${-sliderCount}px`;
 });
 document.querySelector(".cursor-right").addEventListener("click", function () {
-  offset -= 1000;
-  if (offset < 0) {
-    offset = 4000;
+  sliderCount -= sliderWidth;
+  if (sliderCount < 0) {
+    sliderCount = sliderLineWidth - sliderWidth;
   }
-  sliderLine.style.left = `${-offset}px`;
+  sliderLine.style.left = `${-sliderCount}px`;
 });
